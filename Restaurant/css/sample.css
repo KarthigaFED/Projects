@@ -1,0 +1,197 @@
+:root{
+    --green:#5B9A8B;
+    --yellow: #F7E987;
+    --white: whitesmoke;
+    --blue: #252B48;
+}
+body, h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../images/spicyhut.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color: var(--green);
+    min-width: 120px;
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color:var(--yellow);
+}
+header i{
+    margin-right: 0.5em;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: var(--yellow);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.tagline2{
+    color: var(--green);
+}
+.maintext div{
+    margin-top: 0.75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 1.5em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--blue);
+    color: var(--white);
+    border-color: var(--green);
+    cursor: pointer;
+}
+.menu{
+    display: grid;
+    background: linear-gradient(to right, rgb(39, 44, 70) 30%, rgb(38, 44, 73) 30%);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    color: var(--white);
+}
+#menuhead, #locations{
+    background: linear-gradient(to right, rgb(39, 44, 70) 30%, rgb(38, 44, 73) 30%);
+    color: var(--yellow);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    font-size: 1.5em;
+    color: var(--green);
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+.menu td:nth-child(1){
+    justify-self: left;
+    flex: 1;
+
+}
+.menu td:nth-child(2){
+    justify-self: right;
+
+}
+.maincourse{
+    grid-row: span(2);
+}
+.locations{
+    color: var(--white);
+    background: linear-gradient(to right, rgb(39, 44, 70) 30%, rgb(38, 44, 73) 30%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations h2{
+    color: var(--green);
+    margin-bottom: 0.8em;
+}
+.locations div{
+    flex:1;
+    padding: 1em;
+    min-width: 220px;
+}
+footer{
+    background-color: #42424c;
+    color: var(--white);
+    padding: 0.25em 1em;
+}
+#logo{
+    font-size: 1.5em;
+    font-weight: bolder;
+    min-width: 260px;
+}
+button a{
+    text-decoration: none;
+    color: var(--white);
+}
+footer li{
+    display: inline;
+    padding: 0em 1em 1em 0em;
+    color: var(--white);
+    margin-left: 0em;
+}
+ul .none{
+    margin-left: 0em;
+}
+
+.regform{
+    width: 500px;
+    background-color: rgba(0,0,0,0.5);
+    margin: 250px auto;
+    color: white;
+    padding: 10px 20px 30px;
+    border-radius: 10px;
+}
+.regform h3{
+    color: crimson;
+    text-align: center;
+}
+.regform .textlabel{
+    display: block;
+}
+.input input{
+    width: 100%;
+    font-size: 1.1em;
+    border: 1px solid rebeccapurple;
+    border-radius: 8px;
+    box-shadow: 2px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 5px 0px 15px;
+}
+input:focus{
+    background-color: aquamarine;
+}
+.btn{
+    text-align: center;
+}
+button{
+    background-color: aqua;
+    font-size: 1.2em;
+    margin-top: 1.2em;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid rebeccapurple;
+    box-shadow: 2px;
+}
+radio input{
+    accent-color: aqua;
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
